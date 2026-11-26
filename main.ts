@@ -32,7 +32,8 @@ cpSync(join(ROOT, 'game'), join(OUTPUT_DIR, 'game'), { recursive: true });
 cpSync(join(ROOT, 'screenshots'), join(OUTPUT_DIR, 'screenshots'), { recursive: true });
 
 // Build the dossier from what was written, byte for byte as the scorer expects.
-const dossier = buildDossier(join(OUTPUT_DIR, 'game'), CAPS);
+// buildDossier(dir) expects the output directory (parent of game/), then joins 'game' internally.
+const dossier = buildDossier(OUTPUT_DIR, CAPS);
 writeFileSync(join(OUTPUT_DIR, 'dossier.json'), dossier);
 
 console.error('Flight game entry written to', OUTPUT_DIR);

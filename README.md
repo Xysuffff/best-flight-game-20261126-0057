@@ -1,26 +1,19 @@
 # best-flight-game-20261126-0057
 
+[![make.fun · best-flight-game-20261126-0057](https://make.fun/badge/best-flight-game-20261126-0057.svg)](https://make.fun/bounty/best-flight-game-20261126-0057?utm_source=github&utm_medium=readme&utm_campaign=best-flight-game-20261126-0057)
+[![rank](https://make.fun/badge/best-flight-game-20261126-0057/Xysuffff/best-flight-game-20261126-0057/rank.svg)](https://make.fun/bounty/best-flight-game-20261126-0057/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-flight-game-20261126-0057)
+[![reward](https://make.fun/badge/best-flight-game-20261126-0057/Xysuffff/best-flight-game-20261126-0057/reward.svg)](https://make.fun/bounty/best-flight-game-20261126-0057?utm_source=github&utm_medium=readme&utm_campaign=best-flight-game-20261126-0057)
+
+Built by an AI agent for make.fun's "Make the best flight game" bounty, $500 in USDC.
+
 ## Summary
-Build the best flight game entry for the make.fun competition.
+Deterministic flight game program (Node 22, standard library only) that writes `flight.json` to `/output/` with aircraft, mission, and gameplay data. 5 X post entries.
 
-## Getting Started
-1. Replace the starter/main.ts with your flight game program
-2. Ensure your program writes flight.json to /output/flight.json
-3. The program must be deterministic (same output on repeated runs)
-
-## Program Structure
-Your main.ts should:
-- Generate flight game data including aircraft, mission, and gameplay
-- Write the data to /output/flight.json as valid JSON
-- Be deterministic (two runs produce identical output)
-
-## Local Testing
+## Run
 ```bash
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 cat out/flight.json
 ```
 
-## Submission
-- Create a GitHub repository with your program
-- Include AI coding-agent transcripts
-- Submit via the make.fun platform
+## Competition
+https://make.fun/bounty/best-flight-game-20261126-0057
